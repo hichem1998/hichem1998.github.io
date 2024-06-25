@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marché12</title>
+    <style>
+        /* Reset CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body and general styles */
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            direction: rtl;
+            text-align: right;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header styles */
+        header {
+            background-color: #b1f1d6;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+        }
+
+        /* Container styles */
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        /* Product section styles */
+        .product {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 40px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .product img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .product h2 {
+            color: #4caf50;
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+
+        .product p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+        }
+
+        /* Order form section styles */
+        .order-form {
+            width: 100%;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+        }
+
+        .order-form h3 {
+            color: #4caf50;
+            font-size: 1.6rem;
+            margin-bottom: 10px;
+        }
+
+        .order-form form {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .order-form input, .order-form select, .order-form button {
+            width: calc(48% - 10px);
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1.2rem;
+        }
+
+        .order-form select {
+            width: 100%;
+        }
+
+        .order-form button {
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 1.2rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .order-form button:hover {
+            background-color: #45a049;
+        }
+
+       
+        .testimonials {
+            width: 100%;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .testimonials h3 {
+            color: #4caf50;
+            font-size: 1.6rem;
+            margin-bottom: 10px;
+        }
+
+        .testimonial {
+            background-color: white;
+            padding: 20px;
+            margin: 10px 0;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+        }
+
+        .testimonial img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+		
+		.pos{
+            float:center;
+        }
+		
+
+	
+
+    </style>
+
+
+	<!-- Meta Pixel Code -->
+	<script>
+	!function(f,b,e,v,n,t,s)
+	{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+	n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+	if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+	n.queue=[];t=b.createElement(e);t.async=!0;
+	t.src=v;s=b.getElementsByTagName(e)[0];
+	s.parentNode.insertBefore(t,s)}(window, document,'script',
+	'https://connect.facebook.net/en_US/fbevents.js');
+	fbq('init', '1009967293842009');
+	fbq('track', 'PageView');
+	</script>
+	<noscript><img height="1" width="1" style="display:none"
+	src="https://www.facebook.com/tr?id=1009967293842009&ev=PageView&noscript=1"
+	/></noscript>
+	<!-- End Meta Pixel Code -->
+	
+</head>
+<body>
+      <img class="pos" src="09.jpg" width="400px"  >
+
+    <div class="container">
+        <section class="product">
+            <img src="01.png" alt="خلطة الهناء">
+            <h2>خلطة الهناء</h2>
+            <h2>اكتشف خلطتنا المصنوعة من مكونات طبيعية 100% وعضوية.</h2>
+            <p> 
+                "سعر خلطة الهناء 1600 دج فقط. استفد الآن من فوائدها الاستثنائية!"
+            </p>
+            <h2>تخفيض !!!!أدي زوج ب 3000دج</h2>
+        </section>
+
+        <section class="order-form">
+            <h3>اطلب الآن</h3>
+            <form id="orderForm" action="https://formspree.io/f/xnnaajnv" method="POST">
+                <input type="text" id="name" name="name" placeholder="اسمك" required>
+                <input type="tel" id="phone" name="phone" placeholder="رقم هاتفك المحمول" required pattern="^(05|06|07)\d{8}$" maxlength="10">
+                <select id="wilaya" name="wilaya" required>
+                    <option value="">اختر ولايتك</option>
+                        <option value="Adrar">1. أدرار</option>
+                        <option value="Chlef">2. الشلف</option>
+                        <option value="Laghouat">3. الأغواط</option>
+                        <option value="Oum El Bouaghi">4. أم البواقي</option>
+                        <option value="Batna">5. باتنة</option>
+                        <option value="Béjaïa">6. بجاية</option>
+                        <option value="Biskra">7. بسكرة</option>
+                        <option value="Béchar">8. بشار</option>
+                        <option value="Blida">9. البليدة</option>
+                        <option value="Bouira">10. البويرة</option>
+                        <option value="Tamanrasset">11. تمنراست</option>
+                        <option value="Tébessa">12. تبسة</option>
+                        <option value="Tlemcen">13. تلمسان</option>
+                        <option value="Tiaret">14. تيارت</option>
+                        <option value="Tizi Ouzou">15. تيزي وزو</option>
+                        <option value="Alger">16. الجزائر</option>
+                        <option value="Djelfa">17. الجلفة</option>
+                        <option value="Jijel">18. جيجل</option>
+                        <option value="Sétif">19. سطيف</option>
+                        <option value="Saïda">20. سعيدة</option>
+                        <option value="Skikda">21. سكيكدة</option>
+                        <option value="Sidi Bel Abbès">22. سيدي بلعباس</option>
+                        <option value="Annaba">23. عنابة</option>
+                        <option value="Guelma">24. قالمة</option>
+                        <option value="Constantine">25. قسنطينة</option>
+                        <option value="Médéa">26. المدية</option>
+                        <option value="Mostaganem">27. مستغانم</option>
+                        <option value="M'Sila">28. المسيلة</option>
+                        <option value="Mascara">29. معسكر</option>
+                        <option value="Ouargla">30. ورقلة</option>
+                        <option value="Oran">31. وهران</option>
+                        <option value="El Bayadh">32. البيض</option>
+                        <option value="Illizi">33. إليزي</option>
+                        <option value="Bordj Bou Arreridj">34. برج بوعريريج</option>
+                        <option value="Boumerdès">35. بومرداس</option>
+                        <option value="El Tarf">36. الطارف</option>
+                        <option value="Tindouf">37. تندوف</option>
+                        <option value="Tissemsilt">38. تيسمسيلت</option>
+                        <option value="El Oued">39. الوادي</option>
+                        <option value="Khenchela">40. خنشلة</option>
+                        <option value="Souk Ahras">41. سوق أهراس</option>
+                        <option value="Tipaza">42. تيبازة</option>
+                        <option value="Mila">43. ميلة</option>
+                        <option value="Aïn Defla">44. عين الدفلى</option>
+                        <option value="Naâma">45. النعامة</option>
+                        <option value="Aïn Témouchent">46. عين تموشنت</option>
+                        <option value="Ghardaïa">47. غرداية</option>
+                        <option value="Relizane">48. غليزان</option>
+                        <option value="timimoun">49. تيميمون</option>
+                        <option value="bordj badji mokhtar">50. برج باجي مختار</option>
+                        <option value="oueled djellal">51. أولاد جلال</option>
+                        <option value="beni abbess">52. بني عباس</option>
+                        <option value="ain salah">53. عين صالح</option>
+                        <option value="ain guezzam">54. عين قزام</option>
+                        <option value="tougourt">55. تقرت</option>
+                        <option value="djanet">56. جانت</option>
+                        <option value="el meghiar">57. المغير</option>
+                        <option value="el menia">58. المنيعة</option>
+                </select>
+                <input type="text" id="adresse" name="adresse" placeholder="العنوان">
+                <input type="number" id="quantite" name="quantite" placeholder="الكمية" required min="1">
+                <p id="prixTotal">السعر الإجمالي: 0 دج</p>
+                <button id="submit-form" type="submit">اطلب</button>
+            </form>
+        </section>
+        <section class="product">
+            
+            <img src="02.png" alt=" لمسة من الأمل مع خلطة الهناء: اكتشف الطريق إلى السعادة والراحة الداخلية 🌿💖">
+
+            <h2>خلطة الهناء</h2>
+            <p>"استعد للسعادة مع خلطة الهناء، الخلطة السحرية التي تريح القولون العصبي و تنعش مزاجك. ✨
+                - اهرب من الاكتئاب وابحث عن السلام الداخلي. 🌿
+                - تمتع بتوازن الأمعاء وهدوء العقل. 🌱
+                - اكتشف سر السعادة في كل كوب. 💫
+                - جرب خلطة الهناء اليوم وابدأ رحلتك نحو حياة أكثر سعادة وتوازن. 🍵".</p>
+        </section>
+        
+        <section class="testimonials">
+            <h3>آراء عملائنا</h3>
+            <div class="testimonial">
+                <img src="05.jpg" alt="عميل">
+                <p>"هذه الخلطة ساعدتني حقاً على الاسترخاء بعد يوم طويل. أنصح بها بشدة!" - سارة</p>
+            </div>
+            <div class="testimonial">
+            
+                <img src="04.jpg" alt="عميل">
+                <p>"الطعم لذيذ وأشعر بتحسن كبير منذ أن بدأت في شربها." - أحمد</p>
+            </div>
+        </section>
+        <section class="product">
+            <img src="03.jpg" alt=""  >
+            
+            <h2>خلطة الهناء</h2>
+            <p>اكتشف خلطتنا المصنوعة من مكونات طبيعية 100% وعضوية.</p>
+        </section>
+        
+    </div>
+
+
+ <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+ <script type="text/javascript" src="jquery.serializeObject.min.js"></script>
+
+ <script type="text/javascript">
+ var $form = $('form#orderForm'),
+	url='https://script.google.com/macros/s/AKfycbx4lkfUZSHveiSF3XAAvvbGxscNbb7qMmPz909DkKYV_uIqgnIyCgULyonMDdx5sc3N/exec';
+
+   $('#submit-form').on('click', function(e) {
+	   e.preventDefault();
+
+	   var jqxhr = $.ajax({   
+	   url: url, 
+	   method: "GET",
+	   dataType: "json", 
+	   data: $form.serializeObject()
+	   }).done(function(){ 
+	    // do something});
+	   }  
+    )
+   });
+ </script>
+ 
+
+    <script>
+        function calculerPrix(quantite) {
+            if (quantite == 1) {
+                return 1600;
+            } else if (quantite == 2) {
+                return 3000;
+            } else {
+                return 1500 * quantite;
+            }
+        }
+
+        document.getElementById('quantite').addEventListener('input', function() {
+            const quantite = parseInt(this.value);
+            const prixTotal = calculerPrix(quantite);
+            document.getElementById('prixTotal').textContent = `السعر الإجمالي: ${prixTotal} دج`;
+        });
+
+        document.getElementById('orderForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const form = event.target;
+            fetch(form.action, {
+                method: form.method,
+                body: new FormData(form),
+                headers: {
+                    'Accept': 'application/json'
+                }
+            }).then(response => {
+                if (response.ok) {
+                    alert('شكراً لطلبك!');
+                    form.reset();
+                    document.getElementById('prixTotal').textContent = 'السعر الإجمالي: 0 دج';
+                } else {
+                    alert('حدثت مشكلة في طلبك. يرجى المحاولة مرة أخرى.');
+                }
+            }).catch(error => {
+                alert('حدثت مشكلة في طلبك. يرجى المحاولة مرة أخرى.');
+            });
+        });
+    </script>
+</body>
+</html>
